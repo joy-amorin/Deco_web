@@ -1,0 +1,36 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Entornos
+.env
+.env.local
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Dependencias
+venv/
+.env/
+*.egg-info/
+
+# Compilación y generación de archivos
+build/
+dist/
+*.log
+
+# Sistema operativo
+.DS_Store         # macOS
+Thumbs.db         # Windows
