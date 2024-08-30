@@ -1,0 +1,67 @@
+
+.navbar .navbar-nav .nav-link {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    color: #dc3545; /* Color rojo, puedes ajustar el tono si lo deseas */
+}
+.navbar {
+    border-bottom: 2px solid #E5E8EB;
+}
+
+.btn-danger {
+    background-color: #C00101;
+    border-color: #C00101;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+body {
+    font-family: sans-serif, Arial;
+}
+
+.text-danger {
+    color: #C00101 !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.stand-image {
+    width: 100%;
+    height: auto;
+}
+.image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    max-height: 42px;
+    width: auto;
+}
+
+.row.justify-content-center > .col-md-4 {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#quienes-somos {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 960px;
+}
