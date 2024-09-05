@@ -1,27 +1,54 @@
 
-.navbar .navbar-nav .nav-link {
-    font-size: 0.9rem; /* Ajusta el tamaño del texto */
-    color: #dc3545; /* Color rojo, puedes ajustar el tono si lo deseas */
-}
-.navbar {
-    border-bottom: 2px solid #E5E8EB;
+.navbar .navbar-nav .nav-link { /*Menú de barra de navegación*/
+    font-size: 0.9rem; 
+    color: #C00101;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color:  #dc3545;
+    /*border-radius: 5px;*/
+    /*padding: 5px 10px;*/
+}
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative; /* Asegura que el pseudo-elemento se posicione relativo a .navbar */
+
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    width: calc(100% - 100px); /* 100% menos el padding aplicado a la izquierda y derecha */
+    height: 1px;
+    background-color: #E5E8EB; /* Color de la línea */
+    position: absolute;
+    bottom: 0;
+    left: 50px; /* Comienza la línea después del padding */
+}
 .btn-danger {
     background-color: #C00101;
     border-color: #C00101;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn-danger:hover {
-    background-color: #cc0000;
+    background-color: #dc3545;
     border-color: #cc0000;
 }
 body {
-    font-family: sans-serif, Arial;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .text-danger {
     color: #C00101 !important;
+    font-family: 'Open-Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: black
 }
 
 .img-fluid {
@@ -32,23 +59,31 @@ body {
 .text-justify {
     text-align: justify;
 }
-
 .stand-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin-right: 15px;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    border-radius: 15px;
+
 }
 .image-container {
     width: 100%;
     height: 300px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    /*border-radius: 15px;*/
 }
 
 .logo-image {
-    max-height: 42px;
+    max-height: 45px;
     width: auto;
+}
+
+.image-galery {
+    margin-top: 20px;
 }
 
 .row.justify-content-center > .col-md-4 {
