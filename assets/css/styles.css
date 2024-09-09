@@ -50,41 +50,94 @@ p {
     font-family: 'Open Sans', sans-serif;
     color: black
 }
-#servicios .row {
-    margin-left: -20px;
-    margin-right: -20px;
-}
 
 #servicios .row {
-    margin-left: 0;
-    margin-right: 0;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 #servicios .col-md-3 {
-    padding: 0 15px; /* Espaciado horizontal para mantener el espaciado entre columnas */
-    margin-bottom: 20px; /* Espaciado entre filas */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 0 50px;
+   margin-bottom: 20px;
 }
 
 #servicios h4 {
     font-size: 15px;
     color: black;
-    margin: 0; /* Elimina el margen por defecto */
-    /* Espaciado inferior uniforme */
-    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 10px; 
+    text-align: left; 
 }
 
 #servicios .btn-link {
     font-size: 12px;
     color: #C00101;
     display: block; /* Hace que el botón ocupe todo el ancho disponible */
-    margin-top: 5px; /* Espaciado entre el botón y el título */
-    padding: 0 0 10px 0;
+    margin-top: auto; /* Espaciado entre el botón y el título */
+    padding: 0;
+    text-align: left;
+    align-self: flex-start;
 }
 
-
+#servicios .btn-link:hover,
+#servicios .btn-link:focus,
+#servicios .btn-link:active {
+    color:  #C00101; /* Color del texto al pasar el ratón */
+    font-weight: bold;
+}
+hr {
+    border: 0; 
+    height: 1px; 
+    background-color: #C00101; 
+    margin-top: -35px; /*Espacio superior*/
+    margin-bottom: 20px; /* Espacio inferior */
+}
+#servicios .collapse {
+    background-color: #f8f9fa;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-out, opacity 0.3s ease;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+    min-width: 300px;
+    max-width: 100%;
+    will-change: opacity, visibility;
+}
 
 #servicios .collapse p {
     font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+    color: #333;
+    padding-right: 10px;
+}
+
+.collapse {
+    max-width: 100%;
+    word-wrap: break-word;
+    padding-right: 15px;
+}
+.collapse ul {
+    padding-left: 10px;
+}
+
+.collapse ul li {
+    margin-bottom: 100;
+    line-height: 1.5;
+    color: #333;
+    font-size: 14px;
+    /*padding: -60px;*/
+    /*word-wrap: break-word;*/
+}
+
+.service-items {
+    padding-right: 20px;
 }
 
 .img-fluid {
