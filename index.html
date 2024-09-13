@@ -6,6 +6,7 @@
     <title>Deco Producciones</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -93,134 +94,52 @@
                     <h2 class="text-danger">Servicios de nuestros Stands</h2>
                 </div>
             </div>
-            <!--First product row-->
-            <div id="accordion">
-                <div class="row mb-4 service-row">
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Helado Soft</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-helado-soft" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-helado-soft" class="collapse">
+            <!--First service row-->
+            <div class="row mb-4">
+                <div class="col-md-3 mb-4">
+                    <div class="service-item">
+                        <div class="title-container">
+                            <h4>Helado Soft</h4>
+                        </div>
+                        <button class="btn btn-info toggle-btn">Ver detalle</button>
+                        <div class="details animate__animated animate__fadeIn">
                             <p>50 unidades $3500</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4 service-items">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="service-item">
+                        <div class="title-container">
+                            <h4>Algodón de azúcar</h4>
+                        </div>
+                        <button class="btn btn-info toggle-btn">Ver detalle</button>
+                        <div class="details animate__animated animate__fadeIn">
+                                <p>$1300 la hora</p>
+                                <p>Se elaboran 70 máximo por hora</p>
+                                <p>Algodón en tarritos $45 c/u</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="service-item">
                         <h4>Manzana acaramelada</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#manzana-acaramelada" data-parent="#accordion">Ver detalle</button>
-                        <div id="manzana-acaramelada" class="collapse">
+                        <button class="btn btn-info toggle-btn">Ver detalle</button>
+                        <div class="details animate__animated animate__fadeIn">
                             <p>$55 c/u</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Algodón de azúcar</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-algodon-azucar" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-algodon-azucar" class="collapse">
-                            <ul>
-                                <li>$1300 la hora</li>
-                                <li>Se elaboran 70 máximo por hora</li>
-                                <li>Algodón en tarritos $45 c/u</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="service-item">
                         <h4>Garrapiñada</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#garrapiñada" data-parent="#accordion">Ver detalle</button>
-                        <div id="garrapiñada" class="collapse">
-                            <p>Colocar detalles</p>
-                        </div>
-                    </div>
-                </div>
-          
-            <hr class="custom-divider">
-            <!--Second product row-->
-                <div class="row mb-4 service-row">
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Pop</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-pop" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-pop" class="collapse">
-                            <p>$1500 la hora</p>
-                            <p>Se elaboran 50 máximo por hora</p>
-                            <p>Cajita pronta $45 c/u</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Churros</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-churros" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-churros" class="collapse">
-                            <p>Simples: $3500 la hora</p>
-                            <p>Rellenos: $4000 la hora</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Jugos naturales</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-jugos-naturales" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-jugos-naturales" class="collapse">
-                            <p>Vaso: $45</p>
-                            <p>Sabores: Frutilla, durazno y naranja</p>
-            
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Chocolate caliente</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-chocolate-caliente" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-chocolate-caliente" class="collapse">
-                            <p>Vaso: $85</p>
-                        </div>
-                    </div>
-                </div>
-            <hr class="custom-divider">
-             <!--Third product row-->
-                <div class="row mb-4 service-row">
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Hamburguesas</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-hamburguesas" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-hamburguesas" class="collapse">
-                            <p>Simples: $85</p>
-                            <p>Incluyen: aderezos, lechuga y tomate</p>
-                            <p>Completa: $130</p>
-                            <p>Incluye: aderezosl lechuga, tomate, morrón, cebolla, cheddar, jamón</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Panchos</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-panchos" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-panchos" class="collapse">
-                            <p>$60 c/u</p>
-                            <p>Incluye: aderezos y papas pay</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Papas fritas</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-papas-fritas" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-papas-fritas" class="collapse">
-                            <p>Simples: $65</p>
-                            <p>Incluye: aderezos</p>
-                            <p>Con cheddar: $130</p>
-                            <p>Incluye: aderezos</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Nuggets</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-nuggets" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-nuggets" class="collapse">
-                            <p>Cajita con 5 unidades: $85</p>
-                        </div>
-                    </div>
-                </div>
-            
-            <hr calass="custom-divider">
-            <!--fourth product row-->
-                <div class="row mb-4 service-row">
-                    <div class="col-md-3 mb-4 service-items">
-                        <h4>Creps</h4>
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#detalles-creps" data-parent="#accordion">Ver detalle</button>
-                        <div id="detalles-creps" class="collapse">
-                            <p>$85 c/u</p>
-                            <p>Rellenos: queso, jamón y queso</p>
+                        <button class="btn btn-info toggle-btn">Ver detalle</button>
+                        <div class="details animate__animated animate__fadeIn">
+                            <p>Detalles sobre garrapiñada...</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr calass="custom-divider">
+            <hr clas="custom-divider">
             <div class= "row justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="image-container">
@@ -241,7 +160,7 @@
         </div>
 
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
@@ -249,9 +168,7 @@
             $('#accordion .collapse.show').collapse('hide');
         });
     </script>
+    
     <script src="assets/js/scripts.js"></script>
-</body>
-</html>
-
 </body>
 </html>
