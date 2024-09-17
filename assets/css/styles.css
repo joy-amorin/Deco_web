@@ -48,6 +48,33 @@ body {
 p {
     font-family: 'Open Sans', sans-serif;
     color: black
+    
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*background-color: aqua;*/
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap:10px;
+    grid-auto-flow: dense;
+}
+.wide {
+    grid-column: span 2;
+}
+.tall {
+    grid-row: span 2;
 }
 
 #servicios .row {
@@ -221,7 +248,7 @@ hr {
     width: auto;
 }
 
-.image-galery {
+.image-gallery {
     margin-top: 20px;
 }
 
@@ -237,5 +264,6 @@ hr {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 90%;
+    margin: 0 auto;
 }
