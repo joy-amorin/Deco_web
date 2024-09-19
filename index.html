@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicios</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
@@ -53,52 +53,42 @@
         <div class="container">
             <div class="grid-container">
                 <div class="grid-item" style="background-image: url('assets/img/home-images/churros.jpg');"></div>
-
-                <div class="grid-item tall" style="background-image: url('assets/img/home-images/helado.jpg');"></div>
-                <div class="grid-item wide" style="background-image: url('assets/img/home-images/creps.jpg');"></div>
+                <div class="grid-item" style="background-image: url('assets/img/home-images/helado-2.jpg');"></div>
+                <div class="grid-item wide tall" style="background-image: url('assets/img/service-images/stand-juice.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/nuggets.jpg');"></div>
-                <div class="grid-item" style="background-image: url('assets/img/home-images/papas-nuggets.jpg');"></div>
-                <div class="grid-item" style="background-image: url('assets/img/service-images/stand-juice.jpg');"></div>
-                <div class="grid-item" style="background-image: url('assets/img/home-images/garrapiñada.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/manzana-acaramelada.jpg');"></div>
+                <div class="grid-item" style="background-image: url('assets/img/home-images/pop.jpg');"></div>
+                <div class="grid-item" style="background-image: url('assets/img/home-images/creps.jpg');"></div>
                 
             </div>
         </div>
     </section>
     
-    <!--Abou us section-->
+    <!--About us section-->
     <section id="quienes-somos" class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12">
+        <div class="container d-flex">
+            <div class="row w-100">
+                <div class="col-md-8">
                     <h1 class="text-danger">Transforma tus eventos con nuestros stands</h1>
+            
+                    <p class="text-justify">
+                        En Deco Producciones,  nos especializamos en ofrecer stands de comida y bebidas que se adaptan a la temática y estilo de cualquier evento, desde reuniones privadas hasta  eventos corporativos, ofrecemos una variedad de opciones para los invitados. Nos esforzamos por ofrecer un servicio cercano  que añade un toque especial a cada ocasión. 
+                    </p>
+                    <p class="text-justify">
+                        Nuestro profesionalismo nos ha permitido colaborar con reconocidas empresas y marcas como <b>Huggies, Jetour, Tata, Vivanto, Dernel,</b> entre otras, garantizando siempre un servicio de calidad ajustado a las necesidades de nuestros clientes. Además de Montevideo, nuestros stands han estado presentes en localidades como Sauce, Colonia, Minas, Ciudad de la Costa y Maldonado.
+                    </p>
+                    <p class="text-justify">
+                        Nuestro objetivo es aportar valor a cada evento, añadiendo un toque distintivo que enriquece la experiencia de los asistentes.
+                    </p>
+                </div>
+           
+                 <div class="col-md-4 flex-column justify-content-start image-gallery">
+          
+                    <img src="assets/img/about-us-images/stand_fox.jpg" class="img-fluid stand-image" alt="Imagen de stand Fox">
+                    <!--<img src="assets/img/stand_brou.jpg" class="img-fluid stand-image" alt="Imagen de stand Brou">-->
                 </div>
             </div>
-        <div class="row">
-            <div class="col-12">
-                <p class="text-left">
-                    En Deco Producciones,  nos especializamos en ofrecer stands de comida y bebidas que se adaptan a la temática y estilo de cualquier evento, desde reuniones privadas hasta  eventos corporativos, ofrecemos una variedad de opciones para los invitados. Nos esforzamos por ofrecer un servicio cercano  que añade un toque especial a cada ocasión. 
-                </p>
-                <p class="text-left">
-                    Nuestro profesionalismo nos ha permitido colaborar con reconocidas empresas y marcas como <b>Huggies, Jetour, Tata, Vivanto, Dernel,</b> entre otras, garantizando siempre un servicio de calidad ajustado a las necesidades de nuestros clientes. Además de Montevideo, nuestros stands han estado presentes en localidades como Sauce, Colonia, Minas, Ciudad de la Costa y Maldonado.
-                </p>
-                <p class="text-left">
-                    Nuestro objetivo es aportar valor a cada evento, añadiendo un toque distintivo que enriquece la experiencia de los asistentes.
-                </p>
-            </div>
         </div>
-        <div class="row image-gallery">
-            <div class="col-md-4 mb-4">
-                <img src="assets/img/stand_fox.jpg" class="img-fluid stand-image" alt="Imagen de stand Fox">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="assets/img/stand_ligth_it.jpg" class="img-fluid stand-image" alt="Imagen de stand Ligth IT">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="assets/img/stand_brou.jpg" class="img-fluid stand-image" alt="Imagen de stand Brou">
-            </div>
-        </div>
-    </div>
     </section>
     <!--Service section-->
     <section id="servicios" class="py-5">
@@ -115,8 +105,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-ice-cream"></i> Helado Soft</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-helado-soft">Ver detalle</button>
+                        <div id="details-helado-soft" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-ice-cream"></i>50 unidades por $3500</li>
                             </ul>
@@ -128,8 +118,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-candy-cane"></i> Algodón de azúcar</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-algodon-de-azucar">Ver detalle</button>
+                        <div id="details-algodon-de-azucar" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-clock"></i> El servicio tiene uncosto de $1300 la hora</li>
                                 <li><i class="fas fa-stopwatch"></i> Se pueden elaborar hasta 70 unidades por hora</li>
@@ -143,8 +133,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-apple-alt"></i> Manzana acaramelada</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-manzana-acaramelada">Ver detalle</button>
+                        <div id="details-manzana-acaramelada" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-apple-alt"></i>Precio por unidad: $55</li>
                             </ul>
@@ -156,14 +146,14 @@
                         <div class="title-container">
                             <h4><i class="fas fa-candy-cane"></i> Garrapiñada</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
-                            <p>Detalles sobre garrapiñada...</p>
+                        <button class="btn btn-info toggle-btn" aria-controls="details-garrapiñada">Ver detalle</button>
+                        <div id="details-garrapiñada" class="details animate__animated animate__fadeIn">
+                            <p><i class="fas fa-box"></i>Precio por unidad: $55</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="custom-divider">
+            <div class="custom-divider"></div>
              <!--Second service row-->
              <div class="row mb-4">
                 <div class="col-md-3 mb-4">
@@ -171,8 +161,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-box"></i> Pop</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-pop">Ver detalle</button>
+                        <div id="details-pop" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-clock"></i> El servicio tiene uncosto de $1500 la hora</li>
                                 <li><i class="fas fa-stopwatch"></i> Se pueden elaborar hasta 50 unidades por hora</li>
@@ -186,8 +176,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-candy-cane"></i> Churros</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-churros">Ver detalle</button>
+                        <div id="details-churros" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-clock"></i>Simples: $3500 la hora</li>
                                 <li><i class="fas fa-clock"></i>Rellenos: $4000 la hora</li>
@@ -199,8 +189,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-glass-whiskey"></i> Jugos Naturales</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-jugos-naturales">Ver detalle</button>
+                        <div id="details-jugos-naturales" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-glass-whiskey"></i>Precio por vaso: $85</li>
                                 <li><i class="fas fa-lemon"></i>Sabores: frutilla, durazno y naranja</li>
@@ -213,8 +203,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-mug-hot"></i> Chocolate Caliente</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-chocolate-caliente">Ver detalle</button>
+                        <div id="details-chocolate-caliente" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-mug-hot"></i>Precio por vaso: $85</li>
                             </ul>
@@ -222,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="custom-divider">
+            <div class="custom-divider"></div>
             <!--third service row-->
             <div class="row mb-4">
                 <div class="col-md-3 mb-4">
@@ -230,8 +220,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-hamburger"></i> Hamburguesas</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-hamburguesa">Ver detalle</button>
+                        <div id="details-hamburguesa" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-leaf"></i> Hamburguesa Simple: $85 - Incluye aderezos, lechuga y tomate</li>
                                 <li><i class="fas fa-pepper-hot"></i>Hamburguesa Completa: $130 - Incluye aderezos, lechuga, tomate, morrón, cebolla, cheddar y jamón</li>
@@ -244,8 +234,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-hotdog"></i> Panchos</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-panchos">Ver detalle</button>
+                        <div id="details-panchos" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-hotdog"></i>Unidad a $60 - Incluye aderezos y papas pay</li>
                             </ul>
@@ -257,8 +247,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-utensils"></i> Papas Fritas</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-control="details-papas-fritas">Ver detalle</button>
+                        <div id="details-papas-fritas" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-utensils"></i>Papas fritas simples: $65 - Incluye aderezos</li>
                                 <li><i class="fas fa-utensils"></i>Papas fritas con cheddar: $130 - Incluye aderezos</li>
@@ -271,8 +261,8 @@
                         <div class="title-container">
                             <h4><i class="fas fa-drumstick-bite"></i> Nuggets</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-nuggets">Ver detalle</button>
+                        <div id="details-nuggets" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-box"></i>Cajita con 5 unidades: $85</li>
                             </ul>
@@ -280,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="custom-divider">
+            <div class="custom-divider"></div>
             <!--four service row-->
             <div class="row mb-4">
                 <div class="col-md-3 mb-4">
@@ -288,29 +278,79 @@
                         <div class="title-container">
                             <h4><i class="fas fa-utensils"></i> Creps</h4>
                         </div>
-                        <button class="btn btn-info toggle-btn">Ver detalle</button>
-                        <div class="details animate__animated animate__fadeIn">
+                        <button class="btn btn-info toggle-btn" aria-controls="details-creps">Ver detalle</button>
+                        <div id="details-creps" class="details animate__animated animate__fadeIn">
                             <ul>
                                 <li><i class="fas fa-utensils"></i>Unidad a $50: Relleno de jamón y queso o solo queso</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            <hr class="custom-divider">
-            <div class= "row justify-content-center">
-                <div class="col-md-4 mb-4">
-                    <div class="image-container">
-                        <img src="assets/img/service-images/stand-pop.jpg" class="img-fluid stand-image" alt="imagen de stand">
-                    </div>
+            </div>
+            <div class="custom-divider"></div>
+        </div>
+    </section>
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="text-danger">Galería</h2>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="image-container">
-                        <img src="assets/img/service-images/stand-juice.jpg" class="img-fluid stand-image" alt="imagen de stand">
+            </div>
+            <div class="row">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-personal.jpg" alt="personal-de-trabajo" class="img-fluid">
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="image-container">
-                        <img src="assets/img/service-images/stand-coffe.jpg" class="img-fluid stand-image" alt="imagen de stand">
+            
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-panchos-pilsen.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+               
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/jugos-vaso.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-helado.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-agodon2.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-pop-chevrolet.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+               
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-cafe-churros.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-pancho-hamburguesa-pop.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-jugo2.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/pop-evento.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/papas-nuggets.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/papas-maquina.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-pop-light-it.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/algodon-tarritos.jpg" alt="personal-de-trabajo" class="img-fluid">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery-images/stand-brou.jpg" alt="personal-de-trabajo" class="img-fluid">
                     </div>
                 </div>
             </div>

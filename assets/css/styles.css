@@ -77,6 +77,17 @@ p {
     grid-row: span 2;
 }
 
+#quienes-somos .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 #servicios .row {
     display:flex;
     flex-wrap: wrap;
@@ -180,11 +191,11 @@ p {
     text-align: left; 
 }
 
-hr {
+.custom-divider{
     border: 0; 
     height: 1px; 
     background-color: #C00101; 
-    margin-top: -35px;
+    margin-top: -30px;
     margin-bottom: 20px;
 }
 
@@ -217,6 +228,33 @@ hr {
     outline: none !important; /* Eliminar el contorno de enfoque */
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 10px;
+   
+}
+
+.gallery-item {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+   
+}
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
 
 .img-fluid {
     max-width: 100%;
