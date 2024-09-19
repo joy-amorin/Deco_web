@@ -249,12 +249,24 @@ p {
     width: 100%;
     height: auto;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease
    
 }
 .gallery-item img:hover {
     transform: scale(1.1);
 }
+
+/*botones siempre visibles */
+.lb-prev, .lb-next {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Ajusta la transición de las imágenes
+.lb-image {
+    transition: opacity 0.3s ease;
+}*/
 
 .img-fluid {
     max-width: 100%;
