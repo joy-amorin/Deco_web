@@ -13,19 +13,23 @@
 .navbar {
     padding-left: 50px;
     padding-right: 50px;
-    position: relative; /* Asegura que el pseudo-elemento se posicione relativo a .navbar */
+    position: relative; 
 
+}
+.navbar .logo-image {
+    max-height: 45px;
+    width: auto;
 }
 
 .navbar::after {
     content: "";
     display: block;
-    width: calc(100% - 100px); /* 100% menos el padding aplicado a la izquierda y derecha */
+    width: calc(100% - 100px);
     height: 1px;
     background-color: #E5E8EB;
     position: absolute;
     bottom: 0;
-    left: 50px; /* Comienza la línea después del padding */
+    left: 50px;
 }
 .btn-danger {
     background-color: #C00101;
@@ -113,7 +117,7 @@ p {
     opacity: 0;
     transition: opacity 0.3s ease;
     background-color: #fff; 
-    padding: 20px; /* Espaciado interno */
+    padding: 20px;
     padding-left: 30px;
     margin-bottom: 10px;
     min-width: 300px;
@@ -285,7 +289,10 @@ p {
     position: absolute;
     top: 15px;
     right: 25px;
-    font-size: 30px; 
+    font-size: 30px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0px 7px;
     color: white; 
     cursor: pointer;
     transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
@@ -308,7 +315,7 @@ p {
 }
 
 #prev-button:hover, #next-button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .img-fluid {
@@ -336,11 +343,6 @@ p {
     align-items: center;
 }
 
-.logo-image {
-    max-height: 45px;
-    width: auto;
-}
-
 .image-gallery {
     margin-top: 20px;
 }
@@ -360,3 +362,25 @@ p {
     max-width: 90%;
     margin: 0 auto;
 }
+.custom-footer {
+    background-color: white; 
+    padding: 30px 10px;
+    border-top: 1px solid #E5E8EB;
+}
+
+.footer-logo {
+    max-height: 45px;
+    width: auto;
+    margin-left: -380px;
+}
+
+.whatsapp-logo {
+    max-height: 35px; 
+    margin: 0 auto; 
+}
+.ig-logo {
+    max-height: 35px; 
+    margin: 0 auto;
+    margin-right: -380px;
+}
+
