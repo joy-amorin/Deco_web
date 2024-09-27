@@ -52,7 +52,7 @@
             <div class="grid-container">
                 <div class="grid-item" style="background-image: url('assets/img/home-images/churros.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/helado-2.jpg');"></div>
-                <div class="grid-item wide tall" style="background-image: url('assets/img/service-images/stand-juice.jpg');"></div>
+                <div class="grid-item wide tall" style="background-image: url('assets/img/gallery-images/stand-jugo2.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/nuggets.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/manzana-acaramelada.jpg');"></div>
                 <div class="grid-item" style="background-image: url('assets/img/home-images/pop.jpg');"></div>
@@ -279,7 +279,7 @@
                         <button class="btn btn-info toggle-btn" aria-controls="details-creps">Ver detalle</button>
                         <div id="details-creps" class="details animate__animated animate__fadeIn">
                             <ul>
-                                <li><i class="fas fa-utensils"></i>Unidad a $50: Relleno de jamón y queso o solo queso</li>
+                                <li><i class="fas fa-utensils"></i>Unidad a $50: Relleno de queso o jamón y queso</li>
                             </ul>
                         </div>
                     </div>
@@ -305,19 +305,19 @@
 
                     <div class="gallery-item">
                         <a href="assets/img/gallery-images/stand-panchos-pilsen.jpg">
-                            <img src="assets/img/gallery-images/stand-panchos-pilsen.jpg" alt="personal-de-trabajo" class="img-fluid gallery-image">
+                            <img src="assets/img/gallery-images/stand-panchos-pilsen.jpg" alt="stand de panchos" class="img-fluid gallery-image">
                         </a>
                     </div>
                
                     <div class="gallery-item">
                         <a href="assets/img/gallery-images/jugos-vaso.jpg">
-                            <img src="assets/img/gallery-images/jugos-vaso.jpg" alt="personal-de-trabajo" class="img-fluid gallery-image">
+                            <img src="assets/img/gallery-images/jugos-vaso.jpg" alt="vaso de jugo" class="img-fluid gallery-image">
                         </a>
                     </div>
 
                     <div class="gallery-item">
-                        <a href="assets/img/gallery-images/stand-jugo2.jpg">
-                            <img src="assets/img/gallery-images/stand-jugo2.jpg" alt="personal-de-trabajo" class="img-fluid gallery-image">
+                        <a href="assets/img/service-images/stand-juice.jpg">
+                            <img src="assets/img/service-images/stand-juice.jpg" alt="stand de jugo" class="img-fluid gallery-image">
                         </a>
                     </div>
                     <div class="gallery-item">
@@ -384,19 +384,44 @@
         </div>
     </section>
     <!--Contact footer-->
-    <footer class="custom-footer">
+    <footer id ="contacto"class="custom-footer">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-4 text-center">
-                    <img src="assets/img/Deco-logo.png" alt="deco-logo" class="img-fluid footer-logo">
-                </div>
-                <div class="col-4 text-center">
-                    <a href="https://wa.me/95962760" target="_blank" class="text-light">
-                        <img src="assets/img/contact-images/whatsapp-logo.png" alt="whatsapp-logo" class="img-fluid whatsapp-logo">
-                    </a>
-                </div>
-                <div class="col-4 text-center">
-                    <img src="assets/img/contact-images/IG-logo.png" alt="deco-logo" class="img-fluid ig-logo">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="text-danger text-center">Contacto</h2>
+                    <div class="form">
+                        <div class="left-column">
+                            <p>
+                                <a href="https://wa.me/095962760" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <i class="fab fa-whatsapp"></i> 095962760</p>
+                                </a>
+                            <p>
+                                <a href="mailto:decoproducciones@gmail.com" style="text-decoration: none; color: inherit;">
+                                    <i class="fas fa-envelope"></i> decoproducciones@gmail.com</p>
+                                </a>
+                            <p>
+                                <a href="https://www.instagram.com/@decoproducciones.uy" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <i class="fab fa-instagram"></i> @decoproducciones.uy</p>
+                                </a>
+                        </div>
+                        <div class="right-column">
+                            <form action="/send" method="POST">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Nombre" aria-label="Nomre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" placeholder="Teléfono" aria-label="telefono" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea  id="message" name="message" placeholder="Escribe tu mensaje aquí" aria-label="Mensaje" required></textarea>
+                                </div>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>        
                 </div>
             </div>
         </div>
