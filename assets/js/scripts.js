@@ -38,3 +38,26 @@ document.addEventListener('click', function(event) {
         });
     }
 });
+
+let currentPage = 1;
+const totalPages = document.querySelectorAll('.page').length; // Cambia esto para contar el total de páginas
+
+function showPage(page) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach((p, index) => {
+        p.classList.remove('active'); // Remueve la clase active de todas las páginas
+        if (index + 1 === page) {
+            p.classList.add('active'); // Agrega la clase active solo a la página actual
+        }
+    });
+}
+
+showPage(currentPage);
+
+setInterval(() => {
+    currentPage++;
+    if (currentPage > totalPages) {
+        currentPage = 1;
+    }
+    showPage(currentPage);   
+}, 5000);
