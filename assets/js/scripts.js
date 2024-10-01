@@ -60,4 +60,4 @@ setInterval(() => {
         currentPage = 1;
     }
     showPage(currentPage);   
-}, 5000);
+}, 4000);
