@@ -3,7 +3,7 @@
 ## Descripción
 
 Deco Producciones es una plataforma web dedicada a un pequeño emprendimiento que ofrece stands de comida y bebidas.
-Su desarrolla parte delproyecto "Emprende Web" que busca ayudar a pequeños emprendimientos a tener su precencia en linea,con una web sencilla, pero atractiva y funcional. 
+Su desarrollo parte delproyecto "Emprende Web" que busca ayudar a pequeños emprendimientos a tener su precencia en linea,con una web sencilla, pero atractiva y funcional. 
 
 ## Características
 
