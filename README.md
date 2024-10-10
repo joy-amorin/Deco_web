@@ -11,7 +11,7 @@ Su desarrollo parte delproyecto "Emprende Web" que busca ayudar a pequeños empr
 - **Sección "Sobre Nosotros"**: Descripción del servicio y su misíon
 - **Sección de Servicios**: Los usuarios pueden explorar fácilmente los diferentes servicios y precios.
 - **Galería visual**: Imagenes de los stands y listado de marcas con los que la empresa ha trabajado.
-- **Sección de Contacto**: Targeta de contacto con enlaces a Whatasapp y redes sociales. 
+- **Sección de Contacto**: Targeta de contacto con enlaces a Whatsapp y redes sociales. 
 ## Tecnologías utilizadas
 
 - **HTML5**: Estructura de la página.
