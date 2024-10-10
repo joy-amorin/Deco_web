@@ -97,19 +97,6 @@ p {
     gap:10px;
     grid-auto-flow: dense;
 }
-
-@media(min-width: 768px){
-    .grid-container{
-        grid-template-columns: repeat(3, 1fr); /*3 column on large screens*/
-    }
-}
-
-@media(min-width: 1200px)
-{
-    .grid-container{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
 .wide {
     grid-column: span 2;
 }
@@ -314,8 +301,9 @@ p {
     background-color: #13010121;
     border-radius: 8px;
 }
-.container { /*container for sections*/
-    max-width: 90%;
+.container {
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
