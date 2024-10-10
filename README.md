@@ -8,7 +8,7 @@ Su desarrollo parte delproyecto "Emprende Web" que busca ayudar a pequeños empr
 ## Características
 
 - **Interfaz atractiva**: Diseño moderno y responsivo que se adapta a cualquier dispositivo.
-- **Sección "Sobre Nosotros"**: Descripción del servicio y su misíon
+- **Sección "Sobre Nosotros"**: Descripción del servicio y su misión
 - **Sección de Servicios**: Los usuarios pueden explorar fácilmente los diferentes servicios y precios.
 - **Galería visual**: Imagenes de los stands y listado de marcas con los que la empresa ha trabajado.
 - **Sección de Contacto**: Targeta de contacto con enlaces a Whatsapp y redes sociales. 
